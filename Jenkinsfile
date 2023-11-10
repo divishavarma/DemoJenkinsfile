@@ -18,8 +18,8 @@ node {
 	}
 	stage('SonarQube Stage') {		
 		echo 'sonarqube stage started'
-		def sonarscannerHome = tool name: 'sonarqube-scanner'
-		bat "${sonarscannerHome}/bin/sonar-scanner"
+		// def sonarscannerHome = tool name: 'sonarqube-scanner'
+		// bat "${sonarscannerHome}/bin/sonar-scanner"
 		echo 'sonarqube stage completed'			
 	}
 	stage('Deploy Stage') {		
